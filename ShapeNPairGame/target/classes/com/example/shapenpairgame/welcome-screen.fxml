@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shapenpairgame.WelcomeController">
+   <!-- Your UI components here -->
+   <TextArea layoutX="2.0" layoutY="14.0" prefHeight="450.0" prefWidth="583.0" text="Welcome to Shape 'n' Pair, player!&#10;&#10;HOW TO PLAY:&#10;&#10;1. Click on any tile to reveal the image beneath it.&#10;2. Click on another tile and see if it matches the first tile.&#10;3. If the images are the same, that's a match! A point for you!&#10;4. If they are not a match, they will flip back down and you&#10;can try again!&#10;5. You win the game when you clear all of the cards in the board.&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Good Luck!&#9;&#10;Select Mode: &#10;&#10;&#10;&#10;&#10;&#10;">
+      <font>
+         <Font name="LiSu" size="17.0" />
+      </font>
+   </TextArea>
+   <Button layoutX="222.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="53.0" prefWidth="116.0" text="Quit">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Button>
+   <Button layoutX="144.0" layoutY="330.0" mnemonicParsing="false" onAction="#handlePlayer1Button" prefHeight="25.0" prefWidth="78.0" text="1 Player" />
+   <Button layoutX="338.0" layoutY="330.0" mnemonicParsing="false" onAction="#handlePlayer2Button" prefHeight="19.0" prefWidth="78.0" text="2 Player" />
+   <Accordion layoutX="-265.0" layoutY="-212.0">
+     <panes>
+       <TitledPane animated="false" text="untitled 2">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+       <TitledPane animated="false" text="untitled 3">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+     </panes>
+   </Accordion>
+</AnchorPane>
